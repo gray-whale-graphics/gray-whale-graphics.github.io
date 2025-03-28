@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    /* font-family: sans-serif; */
+    font-family:'Times New Roman', Times, serif;
+    padding: 15px;
+}
+
+.image-class {
+    background-color: whitesmoke;
+    padding: 20px;
+    align-items: center;
+    width: 350px;
+}
