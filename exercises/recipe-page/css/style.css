@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.fake-button {
+    padding: 10px;
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
