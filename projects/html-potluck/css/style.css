@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.hero {
+    background-image: url('../images/spiderman_across_multiverse_mini.jpg');
+    background-repeat: no-repeat;
+    /* width: 90%; */
+    /* height: 600px; */
+    width: 100%;
+    margin: 50px;
+    align-content: center;
+}
+
+.title {
+    color: white;
+    padding: 50px
+}
+
+.subtitle {
+    color: white;
+}
+
+.bodycopy {
+    color: white;
+}
+
+.main-content {
+    padding: 50px;
+}
+
+.summary-style {
+    color: white; 
+    padding: 50px;
+}
