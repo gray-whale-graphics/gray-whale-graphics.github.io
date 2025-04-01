@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #6b191f;
+}
+
+hr {
+    border-color: #e06a02;
+}
+
+td {
+    padding: 10px;
+}
+
+a {
+    color: #e06a02;
+}
+
+.main-content{
+    margin: 50px;
+    color: #e06a02;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+.bodycopy {
+    color: #A7A8AA
+    ;
+}
+
