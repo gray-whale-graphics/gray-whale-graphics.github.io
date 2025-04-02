@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#first-paragraph{
+    color: blue;
+    background-color: goldenrod;
+    font-style: italic;
+    text-align: right; /* will actually align more than text including images */
+}
+
+#second-paragraph{
+    color: #ff0000;
+    background-color: lightpink;
+    font-size: 11px;
+    text-decoration: underline; /* underline, overline, strikethough, none > good for handling ugly <a> */
+}
+
+#bold-paragraph{
+    font-weight: bold;
+    background-color: #228b22;
+    font-family: cursive;
+}
+
+/* Span is an inline container, so alignment
+   tools like text-align won't work
+   it works like shrink-wrap. Since inline
+   elements have no extra space, there is
+   no visual difference */
+#span1 {
+    color: crimson;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#span2 {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+#span3 {
+    background-color: yellow;
+}
+
+#span4 {
+    
+}
