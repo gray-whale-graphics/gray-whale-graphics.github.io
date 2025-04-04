@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* HTML Selector (div, p, etc. with no # or . as prefix) */
+
+div {
+    border: 10px dashed red;
+    /* top left/right bottom */
+    margin: 2px 2px 2px;
+    /* like a clock: top, right, bottom left */
+    /* CONTROVERSY: because characters do not always
+    go all the way to the cap height, some people argue
+    that it's better to have a smaller top/bottom padding
+    and larger left/right padding to offset that difference */
+    padding: 20px 30px 50px 10px
+}
+
+.test1 {
+    display: inline-block;
+    margin: 20px 20px;
+}
