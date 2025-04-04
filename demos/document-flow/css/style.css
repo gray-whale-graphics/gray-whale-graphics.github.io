@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.narrow {
+    display: inline-block; /* inline, inline-block */
+    background-color: salmon;
+    width: 200px;
+}
