@@ -1,0 +1,62 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Upside-down Tetris assignment.
+
+    Good luck, and have fun!
+*/
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.tetris-block {
+    display: inline-block;
+    border-width: 12px;
+    border-style: outset;
+    padding: 20px;
+}
+
+.void-block {
+    background-color: black;
+    border-style: solid;
+    border-color: black;;
+}
+
+.wiggly-block {
+    animation: wiggle 2s ease-in-out 3s infinite;
+}
+
+.orange {
+    background-color: #F75C03;
+    border-color: #dc5203;
+}
+
+.rose {
+    background-color: #D90368;
+    border-color: #c0035b;
+}
+
+.byzantium {
+    background-color: #820263;
+    border-color: #66034d;
+}
+
+.lemon {
+    background-color: #F4FF52;
+    border-color: #9ea62b;
+}
+
+.verdigris {
+    background-color: #17BEBB;
+    border-color: #108f8c;
+}
+
+.spring-green {
+    background-color: #35FF69;
+    border-color: #22c84b;
+}
