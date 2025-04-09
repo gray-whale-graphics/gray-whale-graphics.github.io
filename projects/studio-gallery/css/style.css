@@ -1,0 +1,74 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+
+.frame1 {
+    width: 85px;
+    margin: 80px 5px;
+    padding: 5px;
+    border-radius: 40%;
+    border: 6px solid black;
+    box-shadow: 
+        -5px 5px 5px rgba(36, 36, 36, 0.5), 
+        -0.1px 10px 5px rgb(0, 0, 0, 0.3) inset;
+    background-color: blanchedalmond;
+}
+
+.frame2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 120px;
+    margin: 40px 20px;
+    padding: 10px;
+    border: 5px solid black;
+    box-shadow: 
+        -5px 5px 5px rgba(36, 36, 36, 0.5), 
+        -2px 2px 3px rgb(0, 0, 0, 0.5) inset;
+    background-color: burlywood;
+}
+
+.frame3 {
+    width: 102px;
+    margin: 80px 2px;
+    padding: 10px;
+    border: 5px solid black;
+    box-shadow: 
+        -5px 5px 5px rgba(36, 36, 36, 0.5), 
+        -2px 2px 3px rgb(0, 0, 0, 0.5) inset;
+    background-color: blanchedalmond;
+}
+
+.frame4 {
+    width: 68px;
+    margin: 80px 2px;
+    padding: 10px;
+    border: 5px solid black;
+    box-shadow: 
+        -5px 5px 5px rgba(36, 36, 36, 0.5), 
+        -2px 2px 3px rgb(0, 0, 0, 0.5) inset;
+    background-color: blanchedalmond;
+}
+
+.pic {
+    width: 100%;
+}
+
+#pic1 {
+    width: 100%;
+    border-radius: 40%;
+}
+  
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: burlywood;
+}
