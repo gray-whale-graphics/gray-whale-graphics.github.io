@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.single-column {
+    /* Left aligned column is default, so give a width to add side gutter*/
+    width: 50%;
+    min-width: 500px;
+    /* Right aligned */
+    /* margin-left: auto; */ /* auto trick only works with display: block, which it is already here by default */
+    /* center aligned */
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.light-container {
+    background-color: palevioletred;
+    padding: 48px 0px;
+}
+
+.dark-container {
+    background-color: maroon;
+    padding: 48px 0px;
+    color: white;
+}
