@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
+#background {
+    background: radial-gradient(at bottom right, rgb(0, 0, 212, 0.1), rgb(243, 2, 2, 0.1), rgb(0, 151, 0, 0.1), white);
+    min-height: 100%;
+}
+
 /* GRID-RELATED RULES */
 
 #grid-layout {
@@ -10,26 +19,32 @@
     grid-template-areas: 
         "header header"
         "sidebar main";
+        font-family: "Comfortaa", sans-serif;
 }
 
 body {
     margin: 0px;
     font-family: sans-serif;
+    height: 100%;
 }
 
 #header {
     grid-area: header;
     padding: 0px 36px;
+    box-shadow: 0px 5px 10px hsl(0, 0%, 15%, 0.25);
+    margin-bottom: 20px;
 }
 
 #sidebar {
     grid-area: sidebar;
+    padding-right: 25px;
 }
 
 #main {
     display: flex;
     flex-wrap: wrap;
     grid-area: main;
+    min-height: 100%;
 }
 
 /* HEADER RULES */
@@ -47,6 +62,16 @@ body {
     background-color: blue;
     padding: 1px 4px;
     border-radius: 5px;
+}
+
+.header-flex {
+    display: flex;
+}
+
+.brand-decoration {
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
 }
 
 /* SIDEBAR RULES */
@@ -78,11 +103,15 @@ body {
     margin-bottom: 24px;
 }
 
+.youtube-item img:hover {
+    border: 4px solid blue;
+}
+
 .youtube-item .thumbnail-placeholder {
     /* aspect-ratio: 16 / 9; */
     width: 250px;
     background: radial-gradient(at top left, crimson, orange);
-    border-radius: 8px;
+    border-radius: 8px 50px 8px 8px;
 }
 
 .youtube-item h4 {
