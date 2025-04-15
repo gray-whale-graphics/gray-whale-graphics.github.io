@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0px;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.container {
+    background: linear-gradient(-45deg, #000000, #000224, #034881);
+    min-height: 100%;
+    padding: 50px;
+}
+
+#two-columns {
+    display: grid;
+    grid-template-columns: 1fr 450px 250px 1fr; /*think of pixel as ice cube that doesn't move and fractional as liquid that 'flows' to fill the space */
+    grid-template-areas: ". content sidebar ."; /* dots (.) indicate empty cells like gutters where no content will live */
+}
+
+#sidebar-content {
+    grid-area: sidebar;
+    padding: 18px;
+}
+
+#sidebar-content h2 {
+    background-color: #8DC10C;
+    color: rgb(41, 41, 41);
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+#sidebar-content ul {
+    background-color: rgb(41, 41, 41);
+    margin: 0px 0px 36px;
+    padding: 0px 12px;
+    list-style-type: none;
+    border: 1px solid darkslategray;
+}
+
+#sidebar-content a {
+    color: #88d7ff;
+    text-decoration: none;
+}
+
+#sidebar-content li {
+    padding: 8px 0px;
+    border-bottom: 1px solid #30A9BD;
+}
+
+/* pseudo classes */
+#sidebar-content li:last-child {
+    border: none;
+    /* OR you can use border-bottom: 0px */
+}
+
+#main-content {
+    grid-area: content;
+    background-color: rgb(41, 41, 41);
+    border: 2px solid #8DC10C;
+    color: #8097ab;
+    padding: 24px;
+}
+
+#main-content h1,
+h6 {
+    margin: 4px;
+}
+
+.title {
+    color: #ffffff;
+}
+
+#subtitle {
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-areas: "author date";
+    margin: 0px;
+}
+
+#main-content hr {
+    border-color: #8DC10C;
+    margin-top: 10px;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 25px;
+}

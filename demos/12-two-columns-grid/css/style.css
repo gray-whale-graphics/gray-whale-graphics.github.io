@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#two-columns {
+    display: grid;
+    grid-template-columns: 1fr 450px 250px 1fr; /*think of pixel as ice cube that doesn't move and fractional as liquid that 'flows' to fill the space */
+    grid-template-areas: ". content sidebar ."; /* dots (.) indicate empty cells like gutters where no content will live */
+    margin: 36px;
+}
+
+#sidebar-content {
+    grid-area: sidebar;
+    padding: 18px;
+}
+
+#sidebar-content h2 {
+    background-color: darkslategray;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+#sidebar-content ul {
+    background-color: #E9E9E9;
+    margin: 0px 0px 36px;
+    padding: 0px 12px;
+    list-style-type: none;
+    border: 1px solid darkslategray;
+}
+
+#sidebar-content a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+#sidebar-content li {
+    padding: 8px 0px;
+    border-bottom: 1px solid darkslategray;
+}
+
+#main-content {
+    grid-area: content;
+}
+
+/* pseudo classes */
+#sidebar-content li:last-child {
+    border: none;
+    /* OR you can use border-bottom: 0px */
+}
