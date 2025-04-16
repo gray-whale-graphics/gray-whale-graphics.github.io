@@ -7,7 +7,12 @@ html {
 }
 
 #background {
-    background: radial-gradient(at bottom right, rgb(0, 0, 212, 0.1), rgb(243, 2, 2, 0.1), rgb(0, 151, 0, 0.1), white);
+    background: radial-gradient(
+        at bottom right, 
+        rgb(0, 0, 212, 0.1), 
+        rgb(243, 2, 2, 0.1), 
+        rgb(0, 151, 0, 0.1), 
+        white);
     min-height: 100%;
 }
 
@@ -19,7 +24,7 @@ html {
     grid-template-areas: 
         "header header"
         "sidebar main";
-        font-family: "Comfortaa", sans-serif;
+    font-family: "Comfortaa", sans-serif;
 }
 
 body {
@@ -38,6 +43,7 @@ body {
 #sidebar {
     grid-area: sidebar;
     padding-right: 25px;
+    padding-left: 10px;
 }
 
 #main {
@@ -49,7 +55,7 @@ body {
 
 /* HEADER RULES */
 
-#header a{
+#header a {
     text-decoration: none;
 }
 
@@ -80,7 +86,7 @@ body {
     padding: 12px 0px;
     margin: 0px;
     list-style-type: none;
-    border-bottom: 1px solid #AAAAAA
+    border-bottom: 1px solid #AAAAAA;
 }
 
 #sidebar ul a {
@@ -90,9 +96,45 @@ body {
     padding: 12px;
 }
 
-#sidebar ul a:hover {
-    background-color: #EEEEEE;
+#sidebar ul.main-menu a:hover {
+    /* background-color: #EEEEEE; */
+    background-color: rgb(0, 0, 212, 0.1);
     border-radius: 12px;
+}
+
+#sidebar ul.secondary-menu a:hover {
+    /* background-color: #EEEEEE; */
+    background-color: rgb(212, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#sidebar ul.channels-menu span:hover {
+    /* background-color: #EEEEEE; */
+    background-color: rgb(0, 212, 0, 0.1);
+    border-radius: 12px;
+}
+
+.sidebar-title {
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.channel-item {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-areas: "channel-img channel-text";
+    align-items: center;
+}
+
+.sidebar-thumbnail {
+    grid-area: channel-img;
+    border-radius: 50%;
+    border: 1px solid black;
+    max-width: 30px;
+}
+
+.channel-text {
+    grid-area: channel-text;
 }
 
 /* MAIN CONTENT RULES */
