@@ -6,3 +6,158 @@ body {
     margin: 0px;
     font-family: sans-serif;
 }
+
+/* HERO 1 */
+
+#hero {
+    background-image: url("../images/nasa-Yj1M5riCKk4-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#hero .hero-content {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+}
+
+#hero h2 {
+    color: white;
+    font-size: 78px;
+}
+
+#hero h3 {
+    color: white;
+}
+
+#hero a {
+    display: inline-block;
+    text-decoration: none;
+    color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 5%;
+    margin-top: 24px;
+    padding: 10px 24px;
+    transition: 
+        background-color 0.5s,
+        color 0.5s;
+}
+
+#hero a:hover {
+    background-color: lightblue;
+    color: navy;
+}
+
+/* HERO 2 */
+
+#hero-2 {
+    background-image: url("../images/vlad-zaytsev-xdmC-lV-VCc-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#hero-2 .hero-content {
+    position: absolute;
+    text-align: center;
+    top: 1%;
+    left: 48%;
+}
+
+#hero-2 h2 {
+    color: white;
+    font-size: 78px;
+    margin-bottom: 10px;
+}
+
+#hero-2 h4 {
+    color: white;
+    margin-bottom: 24px;
+}
+
+#hero-2 a {
+    display: inline-block;
+    text-decoration: none;
+    color: darkslategray;
+    border: 1px solid darkslategray;
+    border-radius: 5%;
+    margin-top: 24px;
+    padding: 10px 24px;
+    transition: 
+        background-color 0.5s,
+        color 0.5s;
+}
+
+#hero-2 a:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* HERO 3 */
+
+#hero-3 {
+    background-image: url("../images/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#hero-3 .hero-content {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 10%;
+}
+
+#hero-3 h2 {
+    color: white;
+    font-size: 78px;
+    margin-bottom: 10px;
+}
+
+#hero-3 h4 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+#hero-3 h5 {
+    color: white;
+    margin-bottom: 24px;
+}
+
+#hero-3 a {
+    display: inline-block;
+    text-decoration: none;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5%;
+    margin-top: 24px;
+    padding: 10px 24px;
+    transition: 
+        background-color 0.5s,
+        border-color 0.5s,
+        color 0.5s;
+}
+
+#hero-3 a:hover {
+    background-color: rgb(0, 183, 183);
+    border-color: rgb(0, 183, 183);
+    color: white;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
