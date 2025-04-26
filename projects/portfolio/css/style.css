@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SNOW */
+.snow-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snow {
+    width: 2px;
+    height: 2px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: fallingSnow 10s linear infinite;
+
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.snow:nth-child(1) {
+    left: 80%;
+    width: 5px;
+    height: 5px;
+    animation-delay: 0s;
+    animation-duration: 6s;
+}
+
+.snow:nth-child(2) {
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 2s;
+}
+
+.snow:nth-child(3) {
+    left: 25%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 4s;
+}
+
+@keyframes fallingSnow {
+    0% {
+        transform: translateY(0); 
+    }
+    100% {
+        transform: translateY(100vh); 
+    }
+}
+
+/* CONTENT */
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+#single-column-layout {
+    max-width: 80%;
+    margin: 48px auto;
+    text-align: center;
+}
+
+#single-column-layout h2 {
+    font-family: "Anaheim", sans-serif;
+    font-size: 48px;
+    color: whitesmoke;
+}
+
+.hero {
+    background-image: url("../images/hi-res/urban-hi-res-2nse.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 48px;
+}
+
+#hero-1-content {
+    text-align: right;
+    color: white;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+#hero-1-content h1 {
+    font-size: 100px;
+    font-family: "Permanent Marker", cursive;
+}
+
+#hero-1-content a {
+    font-family: "Anaheim", sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0, 0.25);
+    border: 0.5px solid white; 
+    /* color: #333333; */
+    color: white;
+    text-decoration: none;
+    padding: 24px;
+    margin-top: 36px;
+    margin-right: 12px;
+    margin-left: 12px;
+    transition: 
+        background-color 0.5s,
+        border 0.5s,
+        color 0.5s;
+}
+
+#hero-1-content a:hover {
+    background-color: white;
+    border: 0.5px solid black;
+    color: #333333;
+}
+
+#horizontal-masonry-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+#horizontal-masonry-gallery img {
+    height: 450px;
+    flex: 1;
+    object-fit: contain;
+}
+
+.parallax-banner {
+    height: 25vh;
+    margin: 25px 0px;
+    background-image: url("../images/hi-res/urban-hi-res-3q76.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-menu {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 24px; */
+}
+
+.card {
+    flex: 1;
+    border: 3px solid whitesmoke;
+    padding: 36px;
+    text-align: center;
+    margin: 36px;
+}
+
+.card h3 {
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-size: 36px;
+    margin: 0px;
+}
+
+.card a {
+    font-family: "Anaheim", sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    background-color: black;
+    border: 0.5px solid white; 
+    color: white;
+    text-decoration: none;
+    margin-top: 35px;
+    padding: 10px 20px;
+    transition: 
+        background-color 0.5s,
+        border 0.5s,
+        color 0.5s;
+}
+
+.card a:hover {
+    background-color: white;
+    border: 0.5px solid black;
+    color: black;
+}
+

@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#layout {
+    max-width: 800px;
+    margin: 48px auto;
+    text-align: center;
+}
+
+/*
+    Now, we'll add another gallery to the HTML,
+    this time using portrait oriented images.
+
+    (Jump to HTML to add them)
+
+    Depending on your images though, having
+    the images flush up against each other
+    may or may not work aesthetically.
+
+    If they don't (as is kind of the case with
+    our galleries here), we can introduce some
+    spaces between the grid cells.
+
+    Normally, we would use something like margin
+    or padding to handle that, but with CSS Grid
+    (and Flexbox as well), we have another option:
+    a new property called 'gap'.
+
+    It works similar to margin/padding, but you
+    add it on the container level, and it adds
+    space between all items/children in that
+    container.
+*/
+
+.basic-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /*
+        optional extra properties,
+        customize as necessary
+    */
+    padding: 24px;
+    border: 10px solid #333333;
+    gap: 24px;
+}
+
+.basic-grid-gallery img {
+    width: 100%;
+}
+
+.cropped-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* 
+        This 200px is just an arbitrary value;
+        you can pick whatever value you feel
+        looks best to you.
+
+        we're not going to be defining
+        a template for the grid rows; instead, we're
+        going to be adjusting the AUTOmatic row
+        behavior, telling it to set a height for all
+        new rows that it creates, using a new 
+        property called grid-auto-rows.
+    */
+    grid-auto-rows: 200px; 
+
+    padding: 24px;
+    border: 10px solid #333333;
+}
+
+.cropped-grid-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* prevent squish */
+}
+
+.horizontal-masonry-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /*
+        We said before that the gap property
+        works for both grid and flexbox. It
+        looked pretty nice for our grid
+        galleries, so let's preemptively 
+        add it in here as well.
+    */
+    gap: 24px;
+}
+
+/*
+    Now we need to address the images.
+    First, since this is a horizontal
+    masonry gallery, we want to restrict
+    the height, so that the widths are free
+    to grow and expand as much as they can.
+
+*/
+.horizontal-masonry-gallery img {
+    height: 250px;
+    /*
+        You can see that by doing that,
+        our gallery is already a bit more 
+        orderly looking, but there are
+        jagged edges on the right side.
+
+        To fix that, let's allow the images
+        to flex to fill the available space.
+    */
+    flex: 1;
+    /*
+        That's better, but now some of our 
+        images are distorted.  So let's rely on 
+        object-fit once again, to force the
+        images to crop rather than stretch/squish.
+    */
+    object-fit: cover;
+}
+
+/* 
+
+Now we're going to target the gallery,
+and use a property called "columns".
+
+This property accepts two values: 
+- the number of columns to define
+- the width of those columns
+
+Let's build a three column gallery,
+with the widths of those columns
+able to adjust AUTOmatically to
+fill the available space.
+
+(This is similar to the flex property
+in flexboxes, or the fractional units
+(fr) in grids)
+*/
+
+.vertical-masonry-gallery {
+    columns: 3 auto;
+    column-gap: 24px; 
+}
+
+/*
+    However, as before, we still need to
+    configure the images to get them to
+    behave in the gallery.
+
+    This is the same as most of our 
+    previous examples.
+*/
+.vertical-masonry-gallery img {
+    width: 100%;
+    margin-bottom: 24px;
+}
