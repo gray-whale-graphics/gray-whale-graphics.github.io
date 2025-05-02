@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-image: url("../images/bkground.png");
+    background-size: cover;
+}
+
+.single-column-layout {
+    width: 90vw;
+    max-width: 800px;
+    margin: 48px auto;
+    text-align: center;
+}
+
+.single-column-layout h1 {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 24px;
+    color: rgb(22, 22, 49);
+}
+
+.single-column-layout h1 #dragon {
+    font-size: 100px;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card {
+    flex: 300px;
+    margin: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.card .card-front,
+.card .card-back {
+    border: 3px solid rgb(22, 22, 49);
+    border-radius: 12px;
+    padding: 24px;
+    min-height: 300px;
+}
+
+.card .card-back {
+    transform: scaleY(0);
+}
+
+#card1 .card-front {
+    background-image: url("../images/httyd-1.png");
+    background-size: cover;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#card2 .card-front {
+    background-image: url("../images/httyd-3.png");
+    background-size: cover;
+    background-position: 62%;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#card3 .card-front {
+    background-image: url("../images/httyd-4.png");
+    background-size: cover;
+    background-position: 62%;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#card4 .card-front {
+    background-image: url("../images/httyd-2.png");
+    background-size: 105%;
+    background-position: center -40px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card .card-front {
+    transition: transform 0.25s 0.25s; 
+}
+
+.card .card-back {
+    transition: transform 0.25s;
+}
+
+.card:hover .card-front {
+    transform: scaleY(0);
+    transition: transform 0.25s;
+}
+
+.card:hover .card-back {
+    transform: scaleY(1);
+    transition: transform 0.25s 0.25s;
+}
+
+.card .content,
+.card .quotee {
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 24px;
+    color: rgb(22, 22, 49);
+}
+
+.card .content {
+    text-align: left;
+}
+
+.card .quotee {
+    text-align: right;
+}
