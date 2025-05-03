@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar {
+    background: linear-gradient(to bottom, #109cb8, #0e5b96);
+    display: flex;
+    align-items: center;
+}
+
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
+
+#navbar #logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+#navbar a:hover {
+    background: linear-gradient(to top, #109cb8, #0e5b96);
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    /* margin-top: 10px; */
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.25s,
+        visibility 0.25s;
+}
+
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+
+.dropdown-menu a {
+    background-color: darkslateblue;
+    width: 100%;
+    min-width: 200px;
+}
+
+.dropdown-menu a {
+    background-color: darkslateblue;
+    /*
+        You'll also notice that now we have a jagged
+        edge, as all the links have different widths.
+
+        We can fix that by applying width: 100%;
+    */
+    width: 100%;
+    /*
+        But even that looks a tad awkward with our
+        current design, because its so narrow.
+        We can force it to stretch out a bit more
+        by applying a min-width to it.
+    */
+    min-width: 200px;
+}
+
+#navbar .dropdown-menu a:hover {
+    /*
+        Also note that we can't just use the
+        background-color property here, because we 
+        used the background property with linear-gradient 
+        for the other hover state.
+
+        So we have to use the same property
+        (the background property) in order to
+        override the other hover style.
+    */
+    background: slateblue;
+    opacity: 100%;
+    visibility: visible;
+}
+
+/* .dropdown-menu a:first-child {
+    border-radius: 24px 24px 0px 0px;
+} */
+
+.dropdown-menu a:last-child {
+    border-radius: 0px 0px 24px 24px;
+}
+
+.dropdown-container .fa-chevron-up {
+    display: none;
+}
+
+.dropdown-container:hover .fa-chevron-up {
+    display: inline;
+}
+
+.dropdown-container:hover .fa-chevron-down {
+    display: none;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
