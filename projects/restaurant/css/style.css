@@ -64,14 +64,22 @@ body {
 
 #footer #footer-navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo logo links";
     margin: 70px 50px 30px 50px;
-    gap: 150px;
+    gap: 24px;
+}
+
+#footer .logo{
+    grid-area: logo;
+    width: 200px;
 }
 
 #footer .footer-column {
+    grid-area: links;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     gap: 24px;
 }
@@ -189,9 +197,8 @@ body {
 
 /* MEDIA & TEXT MAIN PAGE */
 
-/* .media-and-text {
+.media-and-text {
     display: flex;
-    flex-direction: row;
     margin: 24px;
     gap: 24px;
 }
@@ -204,7 +211,12 @@ body {
 
 .media-and-text .media-content {
     flex: 1;
-} */
+    display: flex;
+    grid-area: content;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
 
 .media-and-text1 {
     display: grid;
