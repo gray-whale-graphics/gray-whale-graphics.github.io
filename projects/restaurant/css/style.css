@@ -22,6 +22,11 @@ body {
     text-decoration: none;
     color: white;
     padding: 24px;
+    transition: color 0.5s;
+}
+
+#navbar #links a:hover {
+    color: #FFDF00;
 }
 
 #navbar #links {
@@ -397,7 +402,57 @@ body {
     width: 100vw;
 }
 
-@media screen and (min-width: 1143px) {
+@media screen and (min-width: 950px) {
+    .single-column-layout {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 636px) {
+
+    .single-column-layout {
+        width: 90%;
+    }
+
+    #navbar #links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+    }
+
+    #navbar a {
+        padding: 10px;
+    }
+
+    .media-and-text1 h3 {
+        font-size: 40px;
+    }
+    
+    .media-and-text1 h4 {
+        font-size: 20px;
+    }
+    
+    .media-and-text1 p {
+        font-size: 15px;
+    }
+
+    .media-and-text2 h3 {
+        font-size: 40px;
+    }
+    
+    .media-and-text2 h4 {
+        font-size: 20px;
+    }
+    
+    .media-and-text2 p {
+        font-size: 15px;
+    }
+
+    .three-by-three-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
 
 }
 
@@ -411,6 +466,16 @@ body {
         gap: 50px;
         width: 90%;
         margin: 48px auto;
+    }
+
+    #navbar #links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+    }
+
+    #navbar a {
+        padding: 10px;
     }
 
     #hero-menu #hero-menu-content {
@@ -440,23 +505,17 @@ body {
     }
 
     .media-and-text1 {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "image" 
             "content";
-        margin: 24px;
-        gap: 24px;
     }
 
     .media-and-text2 {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:  
             "image"
             "content";
-        margin: 24px;
-        gap: 24px;
     }
 
     #three-card-container {
@@ -474,6 +533,22 @@ body {
         gap: 50px;
         width: 90%;
         margin: 48px auto;
+    }
+
+    #navbar a {
+        margin-top: 5px;
+    }
+
+    #navbar #links a {
+        padding: 2px 24px;
+    }
+
+    #hero-main {
+        background-position: 1050px 0px;
+    }
+
+    #hero-main h3{
+        font-size: 80px;
     }
 
     #hero-menu #hero-menu-content {
@@ -524,6 +599,22 @@ body {
 
     #three-card-container {
         flex-direction: column;
+    }
+
+    .media-and-text1 h3 {
+        font-size: 35px;
+    }
+
+    .media-and-text1 h4 {
+        font-size: 20px;
+    }
+
+    .media-and-text2 h3 {
+        font-size: 35px;
+    }
+
+    .media-and-text2 h4 {
+        font-size: 20px;
     }
 
 }
