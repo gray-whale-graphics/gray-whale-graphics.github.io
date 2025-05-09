@@ -60,7 +60,6 @@ body {
     margin-top: 8px;
 }
 
-
 /* IMAGES AND TEAMS */
 
 #image-content {
@@ -120,7 +119,7 @@ body {
 #description-content h4 {
     color: black;
     font-family: "Graduate", serif;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 #cta-content {
