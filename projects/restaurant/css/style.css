@@ -87,6 +87,11 @@ body {
 #footer .footer-column a {
     text-decoration: none;
     color: white;
+    transition: color 0.5s;
+}
+
+#footer .footer-column a:hover {
+    color: #FFDF00;
 }
 
 #footer #copyright {
@@ -110,6 +115,10 @@ body {
     position: absolute;
     top: 15%;
     left: 3%;
+}
+
+#hero-main #hero-main-content a {
+    text-decoration: none;
 }
 
 #hero-main h3{
@@ -197,26 +206,7 @@ body {
 
 /* MEDIA & TEXT MAIN PAGE */
 
-.media-and-text {
-    display: flex;
-    margin: 24px;
-    gap: 24px;
-}
-
-.media-and-text img {
-    flex: 1;
-    width: 100%;
-    border-radius: 45px 0px 45px 0px;
-}
-
-.media-and-text .media-content {
-    flex: 1;
-    display: flex;
-    grid-area: content;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 24px;
-}
+/* Media and Text 1 - image > content */
 
 .media-and-text1 {
     display: grid;
@@ -231,21 +221,45 @@ body {
     grid-area: content;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
     padding: 24px;
+}
+
+.special-text {
+    color: black;
+    transition: 
+        color 0.5s,
+        background-image 0.5s;
+}
+
+.special-text:hover {
+    background-image: linear-gradient(to right, #6462AC, #AC81B9);
+    color: transparent;
+    background-clip: text;
 }
 
 .media-and-text1 img {
     grid-area: image;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 45px 0px 45px 0px;
 }
 
 .media-and-text1 h3 {
-    font-size: 45px;
+    font-size: 50px;
+    margin-top: 12px;
+    margin-bottom: 0px;
 }
 
 .media-and-text1 h4 {
-    font-size: 24px;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.media-and-text1 p {
+    font-size: 20px;
+    margin-top: 12px;
 }
 
 .media-and-text1 a {
@@ -266,6 +280,8 @@ body {
     color: black;
 }
 
+/* Media and Text 2 - content > image */
+
 .media-and-text2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -277,17 +293,25 @@ body {
 .media-and-text2 img {
     grid-area: image;
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     border-radius: 45px 0px 45px 0px;
 }
 
 .media-and-text2 h3 {
-    font-size: 45px;
+    font-size: 50px;
+    margin-top: 12px;
+    margin-bottom: 0px;
 }
 
 .media-and-text2 h4 {
-    font-size: 24px;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.media-and-text2 p {
+    font-size: 20px;
+    margin-top: 12px;
 }
 
 .media-and-text2 a {
@@ -303,7 +327,7 @@ body {
         color 0.25s;
 }
 
-.media-and-text1 a:hover {
+.media-and-text2 a:hover {
     background-color: white;
     color: black;
 }
@@ -371,4 +395,135 @@ body {
 
 #quote-img {
     width: 100vw;
+}
+
+@media screen and (min-width: 1143px) {
+
+}
+
+
+@media screen and (max-width: 636px) and (min-width: 485px) { 
+
+    .single-column-layout {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        width: 90%;
+        margin: 48px auto;
+    }
+
+    #hero-menu #hero-menu-content {
+        position: absolute;
+        text-align: right;
+        top: 2%;
+        right: 5%;
+    }
+
+    #hero-menu #hero-menu-content h3 {
+        font-size: 60px;
+    }
+    
+    #hero-menu #hero-menu-content h4 {
+        font-size: 35px;
+        margin: 0px;
+    }
+    
+    #hero-menu #hero-menu-content p {
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+
+    .three-by-three-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .media-and-text1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image" 
+            "content";
+        margin: 24px;
+        gap: 24px;
+    }
+
+    .media-and-text2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:  
+            "image"
+            "content";
+        margin: 24px;
+        gap: 24px;
+    }
+
+    #three-card-container {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 485px) {
+
+    .single-column-layout {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        width: 90%;
+        margin: 48px auto;
+    }
+
+    #hero-menu #hero-menu-content {
+        position: absolute;
+        text-align: right;
+        top: 2%;
+        right: 5%;
+    }
+
+    #hero-menu #hero-menu-content h3 {
+        font-size: 60px;
+    }
+    
+    #hero-menu #hero-menu-content h4 {
+        font-size: 35px;
+        margin: 0px;
+    }
+    
+    #hero-menu #hero-menu-content p {
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+
+    .three-by-three-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-and-text1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image" 
+            "content";
+        margin: 24px;
+        gap: 24px;
+    }
+
+    .media-and-text2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:  
+            "image"
+            "content";
+        margin: 24px;
+        gap: 24px;
+    }
+
+    #three-card-container {
+        flex-direction: column;
+    }
+
 }
