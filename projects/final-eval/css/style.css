@@ -40,18 +40,24 @@ body {
 }
 
 #title-content h1 {
-    font-size: 60px;
+    font-size: 58px;
     font-family: "Graduate", serif;
     font-weight: 600;
     font-style: bold;
     margin: 0px 0px;
+    transition:  
+        font-size 0.5s;
+}
+
+#title-content h1:hover {
+    font-size: 62px;
 }
 
 #title-content h3 {
-    font-size: 30px;
-    font-family: "Graduate", serif;
+    font-size: 35px;
+    font-family: "Jersey 20", sans-serif;
     font-weight: 600;
-    margin-top: 0px;
+    margin-top: 8px;
 }
 
 
@@ -81,6 +87,11 @@ body {
     flex-direction: column;
     width: 300px;
     text-align: center;
+    transition: width 0.5s;
+}
+
+.card:hover {
+    width: 50%;
 }
 
 .card img {
@@ -120,19 +131,25 @@ body {
 }
 
 #cta-content a {
+    display: inline-block;
     text-decoration: none;
     color: black;
     border: 3px solid black;
-    border-radius: 50px;
     background-color: white;
-    padding: 15px 19px;
+    min-width: 200px;
+    padding: 8px 15px;
+    font-family: "Jersey 20", sans-serif;
     transition: 
         background-color 0.5s,
         color 0.5s;
 }
 
 #cta-content a:hover {
-    /* background: linear-gradient(to right, orange, red); */
     background: linear-gradient(to top right, orange, red);
+    color: white;
+}
+
+#cta-content a:active {
+    background-color: black;
     color: white;
 }
