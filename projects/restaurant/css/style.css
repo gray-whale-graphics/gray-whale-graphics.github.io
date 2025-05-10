@@ -37,8 +37,13 @@ body {
     margin-right: auto;
 }
 
-#navbar #logo img {
-    width: 100px;
+#navbar #main-logo {
+    width: 400px;
+}
+
+#navbar #mobile-logo {
+    display: none;
+    visibility: hidden;
 }
 
 #navbar .cta-button {
@@ -75,7 +80,7 @@ body {
     gap: 24px;
 }
 
-#footer .logo{
+#footer .logo {
     grid-area: logo;
     width: 200px;
 }
@@ -126,13 +131,13 @@ body {
     text-decoration: none;
 }
 
-#hero-main h3{
+#hero-main h3 {
     font-size: 90px;
     color: black;
     margin-bottom: 0px;
 }
 
-#hero-main h4{
+#hero-main h4 {
     font-size: 55px;
     color: black;
     margin-top: 0px;
@@ -247,18 +252,19 @@ body {
     grid-area: image;
     width: 100%;
     height: 100%;
+    max-height: 460px;
     object-fit: cover;
     border-radius: 45px 0px 45px 0px;
 }
 
 .media-and-text1 h3 {
-    font-size: 50px;
+    font-size: 34px;
     margin-top: 12px;
     margin-bottom: 0px;
 }
 
 .media-and-text1 h4 {
-    font-size: 30px;
+    font-size: 24px;
     margin-top: 12px;
 }
 
@@ -299,18 +305,19 @@ body {
     grid-area: image;
     width: 100%;
     height: 100%;
+    max-height: 460px;
     object-fit: cover;
     border-radius: 45px 0px 45px 0px;
 }
 
 .media-and-text2 h3 {
-    font-size: 50px;
+    font-size: 34px;
     margin-top: 12px;
     margin-bottom: 0px;
 }
 
 .media-and-text2 h4 {
-    font-size: 30px;
+    font-size: 24px;
     margin-top: 12px;
 }
 
@@ -345,7 +352,6 @@ body {
     margin: 24px;
     gap: 24px;
 }
-
 
 /* THREE BY THREE GRID */
 
@@ -414,6 +420,10 @@ body {
         width: 90%;
     }
 
+    #navbar #main-logo {
+        width: 200px;
+    }
+
     #navbar #links {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -424,38 +434,17 @@ body {
         padding: 10px;
     }
 
-    .media-and-text1 h3 {
-        font-size: 40px;
+    #about-media img {
+        margin: 0px 24px;
+        max-height: 100%;
+        height: 100%;
+        padding-right: 24px;
     }
     
-    .media-and-text1 h4 {
-        font-size: 20px;
-    }
-    
-    .media-and-text1 p {
-        font-size: 15px;
-    }
-
-    .media-and-text2 h3 {
-        font-size: 40px;
-    }
-    
-    .media-and-text2 h4 {
-        font-size: 20px;
-    }
-    
-    .media-and-text2 p {
-        font-size: 15px;
-    }
-
     .three-by-three-grid {
         grid-template-columns: 1fr 1fr;
     }
-
-    
-
 }
-
 
 @media screen and (max-width: 636px) and (min-width: 485px) { 
 
@@ -466,6 +455,10 @@ body {
         gap: 50px;
         width: 90%;
         margin: 48px auto;
+    }
+
+    #navbar #main-logo {
+        width: 200px;
     }
 
     #navbar #links {
@@ -509,6 +502,7 @@ body {
         grid-template-areas: 
             "image" 
             "content";
+        margin: 0px;
     }
 
     .media-and-text2 {
@@ -516,6 +510,11 @@ body {
         grid-template-areas:  
             "image"
             "content";
+        margin: 0px;
+    }
+
+    #about-media {
+        margin: 24px;
     }
 
     #three-card-container {
@@ -535,6 +534,17 @@ body {
         margin: 48px auto;
     }
 
+    #navbar #main-logo {
+        display: none;
+        visibility: hidden;
+    }
+
+    #navbar #mobile-logo {
+        display: inline;
+        visibility: visible;
+        width: 100px;
+    }
+
     #navbar a {
         margin-top: 5px;
     }
@@ -547,8 +557,8 @@ body {
         background-position: 1050px 0px;
     }
 
-    #hero-main h3{
-        font-size: 80px;
+    #hero-main h3 {
+        font-size: 65px;
     }
 
     #hero-menu #hero-menu-content {
@@ -583,8 +593,7 @@ body {
         grid-template-areas: 
             "image" 
             "content";
-        margin: 24px;
-        gap: 24px;
+        margin: 0px;
     }
 
     .media-and-text2 {
@@ -593,8 +602,7 @@ body {
         grid-template-areas:  
             "image"
             "content";
-        margin: 24px;
-        gap: 24px;
+        margin: 0px;
     }
 
     #three-card-container {
@@ -602,19 +610,31 @@ body {
     }
 
     .media-and-text1 h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .media-and-text1 h4 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .media-and-text1 p {
+        font-size: 15px;
     }
 
     .media-and-text2 h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .media-and-text2 h4 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .media-and-text2 p {
+        font-size: 15px;
+    }
+
+    #about-media {
+        margin: 24px;
     }
 
 }
